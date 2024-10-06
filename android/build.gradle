@@ -25,9 +25,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    // if (project.android.hasProperty('namespace')) {
-    //     namespace 'com.app_minimizer.app_minimizer'
-    // }
+    if (project.android.hasProperty('namespace')) {
+        namespace 'dev.codecity.flutter_app_minimizer'
+    }
     compileSdkVersion 34
 
     compileOptions {
